@@ -20,3 +20,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/access', function () {
     return view('accessToken');
 });
+
+Route::get('/stkpush', function () {
+    return view('stkpush');
+});
