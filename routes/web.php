@@ -24,3 +24,7 @@ Route::get('/access', function () {
 Route::get('/stkpush', function () {
     return view('stkpush');
 });
+
+Route::get('/query', function () {
+    return view('query');
+});

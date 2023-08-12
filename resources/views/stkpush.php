@@ -13,7 +13,7 @@ $phone = '254721773805';//phone number to receive the stk push
 $money = '1';
 $PartyA = $phone;
 $PartyB = '254708374149';
-$AccountReference = 'UMESKIA SOFTWARES';
+$AccountReference = 'THE VICTORSHOW';
 $TransactionDesc = 'stkpush test';
 $Amount = $money;
 $stkpushheader = ['Content-Type:application/json', 'Authorization:Bearer ' . $access_token];
@@ -45,6 +45,7 @@ echo $curl_response = curl_exec($curl);
 $data = json_decode($curl_response);
 $CheckoutRequestID = $data->CheckoutRequestID;
 $ResponseCode = $data->ResponseCode;
+
 if ($ResponseCode == "0") {
-  echo "The CheckoutRequestID for this transaction is : " . $CheckoutRequestID;
-}
+    echo "The CheckoutRequestID for this transaction is : " . $CheckoutRequestID;
+  }
